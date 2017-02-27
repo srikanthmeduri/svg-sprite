@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <style>
+    .list {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        border: 1px solid red;
+        width:9em;
+    }
+
+    .list::after {
+        content: '';
+        display: block;
+        clear: both;
+    }
+    
+    .list>li {
+        margin: 0;
+        padding: 0;
+        float: left;
+    }
+    
+    .list .icon {
+        width: 3em;
+        height: 3em;
+        display: inline-block;
+        background-image: url('sprite/icons-sprite.svg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    </style>
+</head>
+
+<body>
+    <ul class="list">
+        <li>
+            <svg class="icon">
+                <use xlink:href="sprite/icons-sprite.svg#icon-angry"></use>
+            </svg>
+        </li>
+        <li>
+            <svg class="icon">
+                <use xlink:href="sprite/icons-sprite.svg#icon-bear"></use>
+            </svg>
+        </li>
+        <li>
+            <svg class="icon">
+                <use xlink:href="sprite/icons-sprite.svg#icon-bigsmile"></use>
+            </svg>
+        </li>
+        <li>
+            <svg class="icon">
+                <use xlink:href="sprite/icons-sprite.svg#icon-blush"></use>
+            </svg>
+        </li>
+        <li>
+            <svg class="icon">
+                <use xlink:href="sprite/icons-sprite.svg#icon-confused"></use>
+            </svg>
+        </li>
+        <li>
+            <svg class="icon">
+                <use xlink:href="sprite/icons-sprite.svg#icon-cool"></use>
+            </svg>
+        </li>
+        <li>
+            <svg class="icon">
+                <use xlink:href="sprite/icons-sprite.svg#icon-cry"></use>
+            </svg>
+        </li>
+        <li>
+            <svg class="icon">
+                <use xlink:href="sprite/icons-sprite.svg#icon-developer"></use>
+            </svg>
+        </li>
+        <li>
+            <svg class="icon">
+                <use xlink:href="sprite/icons-sprite.svg#icon-evil"></use>
+            </svg>
+        </li>
+    </ul>
+    </nav>
+</body>
+
+</html>
