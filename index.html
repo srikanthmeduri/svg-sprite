@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <!-- <link rel="stylesheet" type="text/css" href="styles.css"> -->
+    <style>
+    .main-nav {
+        z-index: 1;
+        display: flex;
+        justify-content: center;
+        margin: 0 -1em -1em;
+        /*background: hsl(5, 20%, 37%);*/
+        background: transparent;
+    }
+    
+    .main-nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .main-nav li {
+        list-style-type: none;
+    }
+    
+    .main-nav a {
+        display: flex;
+        align-items: center;
+        /*padding: 1em 1.6em;*/
+        font-size: 1.3em;
+        font-weight: 100;
+        text-transform: uppercase;
+        color: hsl(120, 21%, 94%);
+        text-decoration: none;
+    }
+    
+    .main-nav a span {
+        display: block;
+        margin-top: -.2em;
+        font-family: 'Georgia', 'Times New Roman', 'Times', serif;
+        font-style: italic;
+        font-size: 70%;
+        text-transform: lowercase;
+    }
+    
+    .main-nav a:hover {
+        background: hsla(0, 0%, 100%, .1);
+    }
+    
+    .main-nav a:focus {
+        outline: 5px dashed hsla(0, 0%, 20%, .8);
+    }
+    
+    .menu-icon {
+        margin-right: .7em;
+        display: inline-block;
+        width: 1.6em;
+        height: 1.6em;
+        fill: currentColor;
+    }
+    </style>
+</head>
+
+<body>
+    <nav id="site-navigation" class="main-nav" role="navigation">
+        <ul>
+            <li>
+                <a href="#">
+                    <svg class="menu-icon">
+                        <use xlink:href="sprite/icons-sprite.svg#icon-angry"></use>
+                    </svg>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <svg class="menu-icon">
+                        <use xlink:href="sprite/icons-sprite.svg#icon-bear"></use>
+                    </svg>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</body>
+
+</html>
